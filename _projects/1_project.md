@@ -1,80 +1,46 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Hibernation
+description: Sexual maturation and hibernation
+img: assets/img/sqrl1.jpg
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+To survive during harsh environmental conditions including scarce food availability, animals developed strategies to survive. Animals that can travel long distances through air or water can migrate. Some that cannot travel long distances evolved the ability to hibernate. Some of these animals are ground squirrels.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/sqrl2.jpg" title="Hibernating squirrel species" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Here you can find some hibernating squirrel species. Adapted from Dai Pra et al. 2022
 </div>
+
+During hibernation (up to seven months), ground squirrels cycle between a state of torpor interspersed with brief periods of interbout arousals (IBA). Torpor is characterized by a drastic reduction in body temperature accompanied by decreased heart, respiration and metabolic rates, blood pressure and overall activity. Animals remain in this state for up to two weeks a time. Torpor bouts are interrupted by IBAs, that are a temporary state in which ground squirrels restore all of their physiological process to levels seen in active squirrels.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/pic3.jpg" title="Physiological states" class="img-fluid rounded" %}
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/pic4.jpg" title="Torpor and IBA bouts" class="img-fluid rounded" %}
+    </div>
+</div>
+<div class="caption">
+    Ground squirrels undergo cycles of torpor and interbout arousal bouts during hibernation. Adapted from Dai Pra et al. 2022
+</div>
+
+I study the sexual maturation process in the thirteen-lined ground squirrel *(Ictidomys tridecemlineatus)*. This process is interrupted and delayed when animals experience decrease food intake, dehydration and prolonged cold exposure. The thirteen-lined ground squirrels hibernate without access to food and water in cold temperatures for up to seven months. Recently, we reported that juvenile ground squirrels activate their reproductive axis during their very first hibernation season and initiate sexual maturation despite depletion of internal reserves and long-term hypothermia. Through a temporal analysis of hibernation, I found that the reproductive axis in the brain becomes active. Additionally, production of sexual hormones is increased during IBAs and gonadal growth also happens. This activation occurs independently of physiological state and food availability and involves activation of central and peripheral components of the reproductive axis.  
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/pic5.jpg" title="Ground squirrels initiate sexual maturation during hibernation" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Juvenile ground squirrels initiate sexual maturation during hibernation. Adapted from Dai Pra et al. 2022
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+The mechanisms that ground squirrels employ to initiate sexual maturation during hibernation are not well understood. Through a multidisciplinary approach, I aim to answer this question.

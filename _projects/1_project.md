@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-To survive during harsh environmental conditions including scarce food availability, animals developed strategies to survive. Animals that can travel long distances through air or water can migrate. Some that cannot travel long distances evolved the ability to hibernate. Some of these animals are ground squirrels.
+To survive during harsh environmental conditions including scarce food availability, animals developed strategies to survive. Animals that can travel long distances by air or water can migrate. Some that cannot travel long distances evolved the ability to hibernate. Some of these animals are ground squirrels.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -18,7 +18,7 @@ To survive during harsh environmental conditions including scarce food availabil
     Here you can find some hibernating squirrel species. Adapted from Dai Pra et al. 2022
 </div>
 
-During hibernation (up to seven months), ground squirrels cycle between a state of torpor interspersed with brief periods of interbout arousals (IBA). Torpor is characterized by a drastic reduction in body temperature accompanied by decreased heart, respiration and metabolic rates, blood pressure and overall activity. Animals remain in this state for up to two weeks a time. Torpor bouts are interrupted by IBAs, that are a temporary state in which ground squirrels restore all of their physiological process to levels seen in active squirrels.
+During hibernation (up to seven months), ground squirrels cycle between a state of torpor interspersed with brief periods of interbout arousals (IBA). Torpor is characterized by a drastic reduction in body temperature accompanied by decreased heart, respiration and metabolic rates, blood pressure and overall activity. Animals remain in this state for up to two weeks at a time. Torpor bouts are interrupted by IBAs, that are a temporary state in which ground squirrels restore all of their physiological processes to levels seen in active squirrels.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-7 mt-3 mt-md-0">

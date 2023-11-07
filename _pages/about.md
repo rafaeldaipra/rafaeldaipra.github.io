@@ -24,4 +24,4 @@ Beyond my dedication to science, I am also deeply committed to outreach initiati
 
 Furthermore, I have been actively involved in teaching and inspiring students from the New Haven area through Pathways to Science at Yale. My work involves developing engaging activities related to sensory physiology, allowing students to explore the wonders of science and physiology.
 
-Outside of the lab, I really enjoy dancing! Specially tango, attending classes, practices, milongas and events with the **<a href="https://www.yaletangoclub.com/"> Yale Tango Club. </a>** :dancer:
+Outside of the lab, I really enjoy dancing! Especially tango, attending classes, practices, milongas and events with the **<a href="https://www.yaletangoclub.com/"> Yale Tango Club. </a>** :dancer:

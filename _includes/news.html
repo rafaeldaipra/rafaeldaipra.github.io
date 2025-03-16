@@ -1,31 +1,80 @@
-          
-          <div class="news">
-            <h2>news</h2>
-            {% if site.news != blank -%} 
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
-              {% if site.news_limit %}
-              {% assign news_limit = site.news_limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %} 
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
-          {%- else -%} 
-            <p>No news so far...</p>
-          {%- endif %} 
-          </div>
+<div class="news">
+  <h2>news</h2>
+  {% if site.news != blank -%}
+  {%- assign news_size = site.news | size -%}
+  <div>
+    {%- assign news = site.news | reverse -%}
+    <!-- Display first few news items by default -->
+    {% for item in news limit: 5 %}
+    <div class="row mb-3">
+      <div class="col-md-2 col-sm-3">
+        {{ item.date | date: "%b %-d, %Y" }}
+      </div>
+      <div class="col-md-10 col-sm-9">
+        {% if item.inline -%}
+          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        {%- else -%}
+          <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endif %}
+      </div>
+    </div>
+    {%- endfor %}
+    <!-- Additional news items (hidden by default) -->
+    {% if news_size > 5 %}
+    <div id="more-news" style="display: none;">
+      {% for item in news offset: 5 %}
+      <div class="row mb-3">
+        <div class="col-md-2 col-sm-3">
+          {{ item.date | date: "%b %-d, %Y" }}
+        </div>
+        <div class="col-md-10 col-sm-9">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    <!-- Toggle button that uses theme variables -->
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <button class="btn btn-sm theme-toggle-button" id="news-toggle" onclick="toggleNews()">
+          SHOW OLDER UPDATES
+        </button>
+      </div>
+    </div>
+    <style>
+      /* Use theme variables for the button */
+      .theme-toggle-button {
+        background-color: var(--global-theme-color);
+        color: white;
+        border-radius: 4px;
+        border: none;
+        padding: 5px 15px;
+      }
+
+      .theme-toggle-button:hover {
+        background-color: var(--global-hover-color);
+      }
+    </style>
+    <script>
+      function toggleNews() {
+        var moreNews = document.getElementById('more-news');
+        var toggleBtn = document.getElementById('news-toggle');
+        if (moreNews.style.display === 'none') {
+          moreNews.style.display = 'block';
+          toggleBtn.innerHTML = 'SHOW FEWER UPDATES';
+        } else {
+          moreNews.style.display = 'none';
+          toggleBtn.innerHTML = 'SHOW OLDER UPDATES';
+        }
+      }
+    </script>
+    {% endif %}
+  </div>
+  {%- else -%}
+  <p>No news so far...</p>
+  {%- endif %}
+</div>

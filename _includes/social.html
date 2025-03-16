@@ -1,5 +1,5 @@
             {%- if site.email -%}
-            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope ai-xs"></i></a>
+            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-paper-plane ai-xs"></i></a>
             {% endif %}
             {%- if site.telegram_username -%}
             <a href="https://telegram.me/{{ site.telegram_username }}" title="telegram"><i class="fab fa-telegram ai-xs"></i></a>
@@ -30,6 +30,9 @@
             {% endif %}
             {%- if site.mastodon_username -%}
             <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fab fa-mastodon ai-xs"></i></a>
+            {% endif %}
+            {% if site.bluesky_username %}
+            <a href="https://bsky.app/profile/{{ site.bluesky_username }}" title="Bluesky"><i class="fas fa-arrow-up ai-xs"></i></a>
             {% endif %}
             {%- if site.medium_username -%}
             <a href="https://medium.com/@{{ site.medium_username }}" title="Medium"><i class="fab fa-medium ai-xs"></i></a>

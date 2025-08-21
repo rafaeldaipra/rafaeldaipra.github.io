@@ -6,7 +6,7 @@ subtitle: <a href='#'>PhD Candidate in Physiology at Yale University </a>
 
 profile:
   align: right
-  image: prof_pic2.jpg
+  image: Rafael_2025.png
   image_circular: true # crops the image to make it circular
 
 news: true  # includes a list of news items
